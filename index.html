@@ -1,0 +1,373 @@
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MediaCorp Global Ltd - Professional Podcast & Media Services</title>
+<link rel="icon" type="image/png" href="/a/ddff653f-05fd-49c6-a02b-720b553af711">
+<style>
+:root {
+  --primary-color: #000000;
+  --secondary-color: #ffffff;
+  --accent-color: #c9a227;
+  --text-color: #333333;
+  --background-color: #f5f5f5;
+}
+
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+  color: var(--text-color);
+}
+
+/* Header Styles */
+header {
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  padding: 1rem 0;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+}
+
+nav {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2rem;
+}
+
+.logo img {
+  height: 50px;
+  width: auto;
+}
+
+.nav-links {
+  display: flex;
+  gap: 2rem;
+}
+
+.nav-links a {
+  color: var(--secondary-color);
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: var(--accent-color);
+}
+
+/* Hero Section */
+.hero {
+  height: 100vh;
+  background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),
+              url('https://images.unsplash.com/photo-1590602847861-f357a9332bbc') center/cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: var(--secondary-color);
+  padding: 0 2rem;
+}
+
+.hero-content {
+  max-width: 800px;
+}
+
+.hero h1 {
+  font-size: 3.5rem;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+/* Services Section */
+.services {
+  padding: 5rem 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-top: 3rem;
+}
+
+.service-card {
+  background: var(--secondary-color);
+  border-radius: 10px;
+  padding: 2rem;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-10px);
+}
+
+/* Featured Podcasts */
+.featured-podcasts {
+  background-color: var(--background-color);
+  padding: 5rem 2rem;
+}
+
+.featured-content {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.podcast-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-top: 3rem;
+}
+
+.podcast-card {
+  background: var(--secondary-color);
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.podcast-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.podcast-info {
+  padding: 1.5rem;
+}
+
+/* CTA Section */
+.cta {
+  background-color: var(--accent-color);
+  color: var(--primary-color);
+  padding: 5rem 2rem;
+  text-align: center;
+}
+
+.cta-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.button {
+  display: inline-block;
+  padding: 1rem 2rem;
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: #333;
+}
+
+/* Footer */
+footer {
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  padding: 3rem 2rem;
+}
+
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+}
+
+.footer-section h3 {
+  color: var(--accent-color);
+  margin-bottom: 1rem;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section ul li {
+  margin-bottom: 0.5rem;
+}
+
+.footer-section a {
+  color: var(--secondary-color);
+  text-decoration: none;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 2rem;
+  padding-top: 2rem;
+  border-top: 1px solid rgba(255,255,255,0.1);
+}
+
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+  }
+  
+  .hero h1 {
+    font-size: 2.5rem;
+  }
+}
+</style>
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="logo">
+        <img src="/a/ddff653f-05fd-49c6-a02b-720b553af711" alt="MediaCorp Global Logo" width="150" height="50">
+      </div>
+      <div class="nav-links">
+        <a href="/">Home</a>
+        <a href="/podcast-hosting">Podcast Hosting</a>
+        <a href="/studio-rentals">Studio Rentals</a>
+        <a href="/content-creation">Content Creation</a>
+        <a href="/contact">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Your Voice, Amplified</h1>
+      <p>Professional podcast production, hosting, and distribution services to help you reach your audience.</p>
+      <a href="/contact" class="button">Start Your Podcast Journey</a>
+    </div>
+  </section>
+
+  <section class="services">
+    <h2>Our Services</h2>
+    <div class="services-grid">
+      <div class="service-card">
+        <h3>Podcast Hosting</h3>
+        <p>Professional hosting solutions with unlimited storage, analytics, and distribution to major platforms.</p>
+        <a href="/podcast-hosting" class="button">Learn More</a>
+      </div>
+      <div class="service-card">
+        <h3>Studio Rentals</h3>
+        <p>State-of-the-art recording studios equipped with professional gear for your production needs.</p>
+        <a href="/studio-rentals" class="button">Learn More</a>
+      </div>
+      <div class="service-card">
+        <h3>Content Creation</h3>
+        <p>Expert production services to help you create engaging podcast content that stands out.</p>
+        <a href="/content-creation" class="button">Learn More</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="featured-podcasts">
+    <div class="featured-content">
+      <h2>Featured Shows</h2>
+      <div class="podcast-grid">
+        <div class="podcast-card">
+          <img src="/a/dc9cb35d-3499-43bc-beab-c796a10eb976" alt="The Restaurant Doctor Podcast Logo" width="300" height="200">
+          <div class="podcast-info">
+            <h3>The Restaurant Doctor</h3>
+            <p>Expert advice and insights for restaurant owners and entrepreneurs in the hospitality industry.</p>
+          </div>
+        </div>
+        <div class="podcast-card">
+          <img src="/a/28232381-edc1-481f-983a-67ea2b1e961b" alt="Get Jack'd Podcast Logo" width="300" height="200">
+          <div class="podcast-info">
+            <h3>Get Jack'd</h3>
+            <p>Exploring the dynamic world of food and restaurant culture with industry professionals.</p>
+          </div>
+        </div>
+        <div class="podcast-card">
+          <img src="/a/109f7723-0703-45f7-b906-ab058422f117" alt="The Devil's Advocate Podcast Logo" width="300" height="200">
+          <div class="podcast-info">
+            <h3>The Devil's Advocate</h3>
+            <p>Thought-provoking discussions challenging conventional wisdom and exploring different perspectives.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta">
+    <div class="cta-content">
+      <h2>Ready to Start Your Podcast?</h2>
+      <p>Join our community of successful podcasters and take your content to the next level.</p>
+      <a href="/contact" class="button">Get Started Today</a>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-content">
+      <div class="footer-section">
+        <h3>About Us</h3>
+        <p>MediaCorp Global Ltd is a leading provider of professional podcast and media services, helping creators share their stories with the world.</p>
+      </div>
+      <div class="footer-section">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="/podcast-hosting">Podcast Hosting</a></li>
+          <li><a href="/studio-rentals">Studio Rentals</a></li>
+          <li><a href="/content-creation">Content Creation</a></li>
+          <li><a href="/contact">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h3>Contact Us</h3>
+        <p>Floor 1, 1 Corn Exchange<br>Stirling, FK8 2HX<br>United Kingdom</p>
+        <p>Email: info@mediacorpglobal.com</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2023 MediaCorp Global Ltd. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    // Add smooth scrolling
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+          behavior: 'smooth'
+        });
+      });
+    });
+
+    // Add scroll animation for service cards
+    const observerOptions = {
+      threshold: 0.1,
+      rootMargin: '0px 0px -50px 0px'
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.style.opacity = '1';
+          entry.target.style.transform = 'translateY(0)';
+        }
+      });
+    }, observerOptions);
+
+    document.querySelectorAll('.service-card').forEach(card => {
+      card.style.opacity = '0';
+      card.style.transform = 'translateY(20px)';
+      card.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
+      observer.observe(card);
+    });
+  </script>
+</body>
+</html>
